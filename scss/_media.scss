@@ -1,0 +1,141 @@
+@media (max-width: 800px) {
+    #header-home {
+        height: 30rem;
+    }
+}
+
+@media (max-width:500px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #header {
+        &-home {
+            height:10rem;
+            border-bottom: 3px solid $main-color;
+
+            .header-content {
+                display:none;
+            }
+        }
+
+        &-inner {
+            height: 10rem;
+            border-bottom: 3px solid $main-color;
+            background: $bg-img no-repeat center right / cover;
+        }
+    }
+
+    #home-a .specials,
+    #home-b .stats, 
+    #home-c .process,   
+    #about-d .about-testimonials,
+    .items {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    #home {
+        &-a {
+            .specials div {
+                border-bottom: 1px solid $light-color;
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    border:none;
+                    padding-bottom:0;
+                }
+            }
+        }
+
+        &-b {
+            .stats div{
+                padding: 2rem;
+            }
+        }
+    }
+
+    #main-footer {
+        height: 8rem;
+
+        .footer-content {
+            flex-direction: column;
+            height: 8rem;
+        }
+    }
+
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas:
+                'bioimage bioimage bioimage'
+                'bio bio bio'
+                'aw1 aw2 aw3';
+            }
+
+            .bio {
+                border-top: 3px solid $main-color;
+                border-left: none;
+            }
+        }
+
+        &-c {
+            display:none;
+        }
+    }
+
+    #contact {
+        &-a {
+            .form-grid {
+                grid-template-areas:
+                'name'
+                'email'
+                'subject'
+                'phone'
+                'message'
+            }
+
+            button[type="submit"]{
+                margin-top:2rem;
+            }
+        }
+
+        &-b {
+            .contact-grid {
+                flex-direction: column;
+
+                div {
+                    margin-bottom:1rem;
+                    padding-bottom:1rem;
+                    border-bottom: 1px #555 solid;
+
+                    &:last-child {
+                        border:none;
+                        margin-bottom: none;
+                        padding-bottom: none;
+                    }
+                }
+            }
+        }
+
+        &-c {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+@media (max-height:580px) {
+    #header-home {
+        .header-content {
+            padding-top: 3rem;
+        }
+    }
+}

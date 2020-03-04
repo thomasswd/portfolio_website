@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html land="en">
+
+<head>
+    <meta charset ="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02d2a67a13.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>About me</title>
+ </head>
+
+<body>
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <img src="img/logo.png" alt="my portfolio" id="logo">
+                <ul>
+                    <li> <a href="index.html" >Home</a> </li>
+                    <li> <a href="About.html" >About</a> </li>
+                    <li> <a href="Work.html" >Work</a> </li>
+                    <li> <a href="Contact.html" class="current">Contact</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact-a" class="text-center py-2">
+        <div class="container">
+            <h1 class="section-title">contact me</h1>
+            <div class="bottom-line"></div>
+            <p class="lead">Here is how you can reach me</p>
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true"> 
+                <div class="form-grid">
+                    <input type="text" class="text-input name-input" placeholder="Name" name="name"> 
+                    <input type="email" class="text-input email-input" placeholder="Email Address" name="email"> 
+                    <input type="text" class="text-input subject-input" placeholder="Subject" name="text"> 
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number" name="subject"> 
+                    <textarea name="" class="text-input message-input" placeholder=" Enter Message" name="message"></textarea>
+                    <div class="margin-2">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact-b" class="text-center bg-dark py-2">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>email</h3>
+                    <p>yusuksong1@email.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h3>phone</h3>
+                    <p>707-337-8467</p>
+                </div>
+                <div>
+                    <i class="fas fa-address-card fa-2x"></i>
+                    <h3>address</h3>
+                    <p>421 Napa Junction Rd</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-c" class="text-center bg-main py-4">
+        <div class="container">
+            <h1 class="huge">
+                Let's Start Your Next Project
+            </h1>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2020. All Rights Reserved</p>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
